@@ -1,4 +1,4 @@
-# starter_tflite_classification_model
+# tflite_multi_model_example
 This project is an example of integration between tflite model and flutter mobile application framework.
  Resourcecs:
  1. [tflite model maker]
@@ -18,19 +18,7 @@ git clone https://github.com/MOo207/starter_tflite_classification_model.git
 ```sh
 flutter pub get
 ```
-3. When you export your model, jsut copy it in _assets/model_ and update _pubspec_ if required
-4. Change _tf_model_config.dart_ but make sure that your model is quantized to *float16*
-```dart
-class TFModelConfig {
-  // TODO: change the model here
-  static const assetsModel = "assets/model/model.tflite";
-  // TODO: Change the labels here
-  static const assetsLabels = "assets/model/labels.txt";
-  // TODO: change your assets also
-}
-```
-5. Run the project
+3. Run the project
 ```sh
 flutter run
 ```
-6. You will have all use cases for using tflite with flutter (run on image, run on frame)
